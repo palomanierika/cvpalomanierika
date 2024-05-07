@@ -1,0 +1,304 @@
+/* Estilos base */
+* {
+    font-family: "Pridi", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: 900;
+    color: #1e1e1e;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+h3 {
+    font-weight: 600;
+}
+
+a {
+    color: #36374d;
+}
+
+.nav {
+    background-color: #36374d;
+    height: 50px;
+}
+
+.foto-marco {
+    background-color: #36374d;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    border-radius: 5%;
+}
+
+#fotoperfil {
+    width: 150px;
+    position: absolute;
+    top: -20%;
+    left: 0;
+    border-radius: 5%;
+}
+
+.descripcion {
+    display: flex;
+    align-items: flex-start;
+    color: #1e1e1e;
+}
+
+.descripcion .aboutme {
+    margin-left: 20px;
+    text-align: justify;
+    color: #1e1e1e;
+}
+
+.contenedor1 {
+    background-color: #e8b1be;
+    color: #1e1e1e;
+    padding: 20px;
+    margin: 0;
+}
+
+.contenedor2 {
+    display: flex;
+}
+
+.sidecolumn {
+    background-color: #b1d5de;
+    color: #1e1e1e;
+    padding: 3%;
+    flex: 0.8;
+}
+
+.sidecolumn .bi.bi-suit-heart-fill {
+    color: #36374d;
+}
+
+.sidecolumn .bi.bi-geo-fill {
+    color: #36374d;
+}
+
+.skills {
+    background-color: #36374d;
+    color: #f5f5f5;
+    padding: 3%;
+    flex: 2.2;
+}
+
+.skills .bi.bi-suit-heart-fill {
+    color: #e8b1be;
+}
+
+.contenedor3 {
+    display: flex;
+}
+
+.habilidades,
+.programas {
+    flex: 1;
+}
+
+/* Estilos para los contenedores de títulos y barras de progreso */
+.progress-section {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para el título de la experiencia (HTML o CSS) */
+.progress-title {
+    width: 110px;
+}
+
+/* Estilos para la barra de progreso y sus puntos */
+.progress-bar {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para los puntos individuales de la barra de progreso */
+.progress-dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: none;
+    transition: background-color 0.3s ease;
+    border: 2px dotted #e8b1be;
+}
+
+/* Estilos adicionales */
+.complete {
+    background-color: #e8b1be;
+}
+
+.progress-text {
+    margin-right: 10px;
+}
+
+.progress-info {
+    margin-left: auto;
+}
+
+.principal {
+    background-color: #f5f5f5;
+    width: 95%;
+    margin: auto;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .descripcion {
+        display: block;
+    }
+ .sidecolumn{
+    order: 2;
+ }
+.contenedor2{
+    display: flex;
+    flex-direction: column;
+    order: 1; /* Cambiar el orden de contenedor2 */
+}
+    .progress-dot {
+        width: 8px;
+        height: 8px;
+        border: .1px dotted #e8b1be;
+    }
+
+    .contenedor3{
+    display: block;
+    }
+}
+
+
+
+
+
+/* Media query para pantallas medianas */
+@media only screen and (min-width: 768px) {
+    .contenedor1 h1 {
+        font-size: 20px;
+    }
+
+    .contenedor1 .descripcion {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor1 .descripcion .aboutme {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .contenedor3{
+        display: block;
+        }
+        
+        .progress-dot{
+        width: 12px;
+        height: 12px;
+        border: .5px dotted #e8b1be;
+    }
+}
+
+
+
+/* Media query para pantallas grandes */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .contenedor1 h1 {
+        font-size: 22px;
+    }
+
+    .contenedor1 .descripcion {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .contenedor1 .descripcion .aboutme {
+        margin-left: 20px;
+        text-align: justify;
+    }
+
+
+    .contenedor3{
+        display: block;
+        }
+        
+        .progress-dot{
+        width: 15px;
+        height: 15px;
+        border: 2px dotted #e8b1be;
+    }
+}
+
+/* Media query para pantallas extra grandes verticales */
+@media only screen and (min-width: 993px) and (max-device-width: 1023px) and (orientation: portrait) {
+
+    .contenedor1 h1 {
+        font-size: 28px;
+    }
+
+    .contenedor3{
+        display: block;
+        }
+}
+
+/* Para dispositivos con un ancho de dispositivo entre 1024px y 1279px en orientación paisaje */
+@media only screen 
+and (min-device-width: 1024px) 
+and (max-device-width: 1279px) 
+and (orientation: landscape) {
+
+
+    .contenedor1 h1 {
+        font-size: 25px;
+    }
+
+    .contenedor1 .descripcion {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .contenedor1 .descripcion .aboutme {
+        margin-left: 20px;
+        text-align: justify;
+    }
+    .progress-dot{
+        width: 8.5px;
+        height: 8.5px;
+        border: 1px dotted #e8b1be;
+    }
+    .contenedor3 {
+        display: flex;
+    }
+}
+
+/* Para dispositivos con un ancho de dispositivo entre 1280px y 2200px en orientación paisaje */
+@media only screen 
+and (min-device-width: 1280px) 
+and (max-device-width: 2200px) 
+and (orientation: landscape) {
+
+    .contenedor1 h1 {
+        font-size: 28px;
+    }
+
+    .contenedor1 .descripcion {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .contenedor1 .descripcion .aboutme {
+        margin-left: 20px;
+        text-align: justify;
+    }
+    .contenedor3 {
+        display: flex;
+    }
+}
+
+
